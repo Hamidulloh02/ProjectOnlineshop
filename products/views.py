@@ -14,3 +14,8 @@ class ProductsAPIView(ListAPIView,CreateAPIView,RetrieveUpdateDestroyAPIView):
     # permission_classes = IsAuthorOrReadOnly
     queryset = Products.objects.all()
     serializer_class = ProductSerializer
+
+class ProductSingleAPIView(RetrieveUpdateDestroyAPIView,CreateAPIView):
+    # permission_classes = IsAuthorOrReadOnly
+    queryset = Products.objects.all()
+    serializer_class = ProductSerializer

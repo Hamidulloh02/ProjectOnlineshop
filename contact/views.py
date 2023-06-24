@@ -6,3 +6,5 @@ from .serializers import ContactSerializer
 class ContactAPIView(CreateAPIView):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer
+
+

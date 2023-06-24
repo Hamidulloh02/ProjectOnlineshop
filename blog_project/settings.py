@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     # mahally
     'products',
     'contact',
+    'emailapp',
     'corsheaders',
 ]
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -164,6 +165,17 @@ CKEDITOR_CONFIGS = {
 }
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 CKEDITOR_RESTRICT_BY_USER = True
+
+
+#Send email settings
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+EMAIL_BACKEND = "django.core.mail.backends.dummy.EmailBackend"
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = "sizning emailingiz"
+EMAIL_HOST_PASSWORD = "parolingiz"
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
 
 
 
